@@ -1,0 +1,46 @@
+body {
+  background: #faf7e6; }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .wrap .form-component {
+    width: 275px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px silver dashed; }
+    .wrap .form-component > div {
+      background: white; }
+    .wrap .form-component-selected {
+      background-color: rgba(48, 151, 239, 0.2);
+      border: 3px lightblue outset; }
+
+.operation-panel {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  padding: 19px;
+  background: #faf7e7b8;
+  transition: .5s; }
+  .operation-panel .clean-rules-button {
+    margin: 11px; }
+  .operation-panel .delete-button {
+    margin: 11px; }
+  .operation-panel .clone-area {
+    margin: 11px; }
+    .operation-panel .clone-area .clone-num {
+      width: 171px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right;
+  border-left: 2px solid #4cc0b7; }
+
+.left, .right {
+  position: relative;
+  width: 50%;
+  padding: 30px; }
